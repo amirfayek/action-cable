@@ -7,7 +7,7 @@ document.addEventListener('turbolinks:load', () => {
   consumer.subscriptions.create({ channel: "RoomChannel", room_id: 1 }, {
     connected() {
       // Called when the subscription is ready for use on the server
-      console.log("Connected to room channel...")
+      console.log("Connected to room channel " + room_id)
     },
 
     disconnected() {
